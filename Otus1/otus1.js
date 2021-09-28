@@ -31,3 +31,8 @@
 // let string = "a";
 // alert(number * string);
 //результат будет NaN
+
+// 1.3.4 опредедение типа данных
+// let value;
+// let double = typeof typeof value;
+// alert(double); вернется string, typeof всегда возвращает строку
