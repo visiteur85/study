@@ -36,3 +36,50 @@
 // let value;
 // let double = typeof typeof value;
 // alert(double); вернется string, typeof всегда возвращает строку
+
+//Домашнее задание
+// let a = 1;
+// let b = 2;
+// alert(a + b);
+
+// let a = "привет"; 
+// let b = "как дела";
+// let c = a + b;
+// alert(c.length);
+
+// Задача: написать программу, которая запрашивает у пользователя ввод 
+// трёхзначного числа, а потом выводит в консоль сумму цифр введённого 
+// числа. 
+// const​ num = prompt(​'Enter the number: '​); 
+// Теперь нужно получить цифры числа. Мы будем считать, что пользователь 
+// всегда вводит корректное значение. Третья цифра — остаток от деления 
+// исходного числа на 10. 
+// const​ num = prompt(​'Enter the number: '​); 
+// const​ digit3 = num % ​10​;
+// Первая цифра — исходное число минус остаток от деления на 100, результат 
+// разделить на 100.
+// const​ num = prompt(​'Enter the number: '​); 
+// const​ digit3 = num % ​10​; 
+// const​ digit1 = (num - num % ​100​)/​100​; 
+// Теперь осталось найти среднюю цифру. Для этого вычтем из исходного числа 
+// первую цифру, умноженную на 100, и третью цифру, результат разделим на 10. 
+// let num = prompt("Введите число: ");
+// let number3 = num % 10;
+// let number1 = (num - num % 100)/100;
+// let number2 = (num - number1 * 100 - number3)/10;
+// alert(number1 + number2 + number3);
+
+// игра fizzBuzz
+// export function fizzBuzz() {
+//     for (let i = 1; i < 101; i++) {
+//       if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("FizzBuzz");
+//       } else if (i % 3 === 0) {
+//         console.log("Fizz");
+//       } else if (i % 5 === 0) {
+//         console.log("Buzz");
+//       } else {
+//         console.log(i);
+//       }
+//     }
+//   }
