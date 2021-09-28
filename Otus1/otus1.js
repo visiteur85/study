@@ -17,3 +17,17 @@
 
 // let name = "Pavel";
 // alert(name.length);
+
+//1.3.2 - числа
+// let kbite  = 15;
+// let bit = kbite * 1024 * 8;
+// alert(bit);
+
+// let miles = prompt("Введите расстояние в милях");
+// let km = miles * 1.6;
+// alert(+km.toFixed(2));
+
+// let number = 2;
+// let string = "a";
+// alert(number * string);
+//результат будет NaN
