@@ -70,16 +70,17 @@
 // alert(number1 + number2 + number3);
 
 // игра fizzBuzz
-// export function fizzBuzz() {
-//     for (let i = 1; i < 101; i++) {
-//       if (i % 3 === 0 && i % 5 === 0) {
-//         console.log("FizzBuzz");
-//       } else if (i % 3 === 0) {
-//         console.log("Fizz");
-//       } else if (i % 5 === 0) {
-//         console.log("Buzz");
-//       } else {
-//         console.log(i);
-//       }
-//     }
-//   }
+// for (var i = 1; i <= 100; i++) {
+//     if (i % 15 === 0) alert("FizzBuzz");
+//     else if (i%3 === 0) alert("Fizz");    
+//     else if (i%5 === 0) alert("Buzz");    
+//     else alert(i);    
+// }
+
+//1.4.2 логические выражения
+// let number  = prompt("введите число");
+// let compare = (number >= 10) && (number <= 99) || (number <= -10);
+// alert(compare);
+
+                                                //Условия 
+1.5.1 Операторы if/else
