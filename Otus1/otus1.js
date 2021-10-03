@@ -101,3 +101,5 @@
 // let sym = prompt("M for male or F for female");
 // let gender = (sym === "M") ? "male" : "female";
 // alert(gender);
+
+// 1.5.3 Оператор switch
