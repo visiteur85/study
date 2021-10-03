@@ -96,3 +96,8 @@
 // } else {
 //     alert("Добр пожаловать)")
 // }
+
+// 1.5.2 Оператор ?
+// let sym = prompt("M for male or F for female");
+// let gender = (sym === "M") ? "male" : "female";
+// alert(gender);
