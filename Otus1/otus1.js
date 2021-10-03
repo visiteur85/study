@@ -82,5 +82,17 @@
 // let compare = (number >= 10) && (number <= 99) || (number <= -10);
 // alert(compare);
 
-                                                //Условия 
+//Условия 
 // 1.5.1 Операторы if/else
+// let age = prompt("введите ваш возраст:");
+// if (age < 18) {alert("Вход запрещён!!!")
+// };
+
+// let age = prompt("Введите ваш возраст:")
+// if (age < 18) {
+//     alert("Повзрослей")
+// } else if (age > 75) {
+//     alert("Пора на пенсию")
+// } else {
+//     alert("Добр пожаловать)")
+// }
