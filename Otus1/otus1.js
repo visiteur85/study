@@ -98,8 +98,101 @@
 // }
 
 // 1.5.2 Оператор ?
+
 // let sym = prompt("M for male or F for female");
 // let gender = (sym === "M") ? "male" : "female";
 // alert(gender);
 
 // 1.5.3 Оператор switch
+
+// let city = prompt("Enter city name:");
+// let cost;
+// if (city === "Moscow") {
+//     cost = 3500;
+//     alert(cost);
+// } else if (city === "Kazan" || city === "ST. Petersburg") {
+//     cost = 5000;
+//     alert(cost);
+// } else {
+//     alert("ALL ticketsare sold");
+// };
+
+// let num = +prompt("Введите число");
+// switch(num) {
+//     case 0:
+//         alert(0)
+//         break;
+//     case 1: 
+//         alert(1)
+//     break;
+//     case 2:
+//     case 3:
+//         alert("2,3")
+//         break;
+// }
+
+//Домашнее задание 2.
+// 1.Впеременныхa и b хранятся числа. Вывести в 
+// консоль наибольшее из них.
+// let a = +prompt("Введите число:");
+// let b = +prompt("Введите число 2:");
+// if (a > b) {
+//     alert(a);
+// }
+// else if (b > a) {
+//     alert(b);
+// }
+// else {alert("Числа равны")};
+
+// 2.Запросить у пользователя ввод числа от 1 до 12. 
+// Вывести в консоль название месяца, соответствующее
+// let number  = +prompt("Введите число от 1 до 12:");
+// switch(number) {
+//     case 1:
+//         alert("Январь")
+//         break;
+//     case 2:
+//         alert("Февраль")
+//         break;
+//     case 3:
+//             alert("Март")
+//             break;
+//     case 4:
+//             alert("Апрель")
+//             break;
+//     case 5:
+//         alert("Май")
+//         break;
+//     case 6:
+//         alert("Июнь")
+//         break;
+//     case 7:
+//             alert("Июль")
+//             break;
+//     case 8:
+//             alert("Август")
+//             break;
+//     case 9:
+//         alert("Сентябрь")
+//         break;
+//     case 10:
+//         alert("Октябрь")
+//         break;
+//     case 11:
+//             alert("Ноябрь")
+//             break;
+//     case 12:
+//             alert("Декабрь")
+//             break;
+// }
+
+// *Впеременныхcircle и square хранятся площади круга 
+// и квадрата соответственно. Написать программу, 
+// которая определяет, поместится ли круг в квадрат.
+
+// let circle  = +prompt("введите площадь круга:");
+// let square = +prompt("Введите площадь квадрата:");
+// let sideSquare = Math.sqrt(square);
+// let diametrCircle = (Math.sqrt(circle / Math.PI)) * 2;
+// let result  = (diametrCircle <= sideSquare) ? "Поместится" : "Не поместится";
+// alert(result);
