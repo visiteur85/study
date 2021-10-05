@@ -196,3 +196,89 @@
 // let diametrCircle = (Math.sqrt(circle / Math.PI)) * 2;
 // let result  = (diametrCircle <= sideSquare) ? "Поместится" : "Не поместится";
 // alert(result);
+
+//1.6.1 цикл while
+// let sum = 0;
+// let number = 1;
+// while (number <= 100) {
+//     sum = sum + number;
+//     number++;
+// }
+// alert(sum);
+
+// 1.6.2 Цикл do while
+// 1.6.3 цикл for
+//программа выводит факториал числа, введенного с клавиатуры
+// let input = +prompt("Введите число");
+// let factorial = 1;
+// for (let i =1; i <=input; i++) {
+// factorial = factorial * i;
+// }
+// alert(factorial);
+
+// 1.6.4. Прерывание цикла 
+//программа которая по очереди запрашивает у пользователя числа и вычисляет их сумму. если пользователь вводит вместо числа знак=, сумма вы
+//водится в консоль
+// let sum = 0;
+// while (true) {
+//     const input = prompt("Введите число или знак =");
+//     if (input == '=') {
+//         break;
+//     }else {
+//         sum = sum + Number(input);
+//     }
+// }
+// alert(sum)
+
+//2.1.1 Что такое Объекты
+
+// let car = {
+//     model: "Audi",
+//     color: "Red",
+//     year: 2012
+// }
+// const input = prompt("Введите свойство:");
+// const value = car[input];
+
+// if (value) {
+//     alert(value);
+// }
+// else {
+//     alert("Такого свойства нет");
+// }
+
+//2.1.2Добавление и удаление свойств
+// let car = {
+//          model: "Audi",
+//          color: "Red",
+//          year: 2012
+//      }
+//      const input = prompt("введите свойство");
+//      const hasProp = input in car;
+//      if (hasProp) {
+//          delete car[input];
+//      }
+//      else {
+//          car[input] = null
+//      }
+
+//2.1.3 Копирование объекта
+
+// let obj = {
+//     number: 1001,
+//     place: "A101",
+//     weight: 25
+// }
+// let newObj = Object.assign({}, obj, {cost: 10} );
+
+//2.1.4 Деструктуризация объекта
+// Написать программу которая запишет свойство name в переменную name, свойство years в переменную age, свойство height в переменную height/
+// если свойства нет, то в качестве значения записать null
+// let person = {
+//     names: "Sam",
+//     years: 25
+// };
+// let {names, years: age, height = null} = person;
+// alert(names);
+// alert(age);
+// alert(height);
