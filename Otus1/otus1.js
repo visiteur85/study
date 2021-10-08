@@ -229,6 +229,22 @@
 //     }
 // }
 // alert(sum)
+// 
+// Домашнее задание No3 «Циклы»
+// 1.Вывести в консоль сумму всехцелыхчисел от 50 до 
+// 100.
+
+// 2.Вывести в консоль таблицу умножения на 7.
+// 7 x 1 = 7
+// 7 x 2 = 14
+// ...
+// 7 x 9 = 63
+
+// const number = 7;
+// for (let i = 1; i <= 10; i++) {
+//     let multiply = number * i;
+//     console.log(`${number}*${i}=${multiply}`)
+// };
 
 //2.1.1 Что такое Объекты
 
@@ -339,3 +355,105 @@
 // медалей. если в массиве нет соответствующего значения, то записать в переменную 0
 // let olimpisc = [12, 23, 45];
 // let [gold = 0, , bronze = 0] = olimpisc;
+
+//2.3.1 Что такое функция
+
+//написать функцию calc , которая принимает на вход число и степень, в которую нужно возвести это число.
+
+// function calc(num, exp) { 
+//     let res = 1;
+//     for (let i = 1; i <= exp; i++) {
+//         res = res * num;}
+//         return  res
+//     }
+
+//     let result = calc(2, 10);
+//     alert(result);
+
+// 2.3.2 Область функции
+// 2.3.3 Замыкания
+// function outer() {
+//     let message = "Hello"
+//     return function () {
+//         alert(message)
+//     }
+// }
+// const value = outer();
+// const message = "Hi"
+// value()
+//2.3.4 Ассинхронные операции
+
+// function counter(from, to) {
+//     let  number = from;
+//     const id = setInterval(() => {
+//         console.log(number);
+
+//         if (number == to) {
+//             clearInterval(id);
+//          } else {
+//                 number++;
+//             }
+//         }, 1000);
+//     }
+//     counter(4, 8);
+
+
+//2.3.5 Колбэк функции
+// const request = (cb) => {
+//     console.log("request");
+//     cb ({ text: "Error"});
+
+//     setTimeout(() => {
+//         console.log("response");
+//         const data = {text: "Hello"};
+
+//         cb(null, data);
+//     }, 2000);
+// }
+// request((err, data) => {
+//     if (!err) {
+//         console.log("Hello callback!", data);
+//     } else {
+//         console.error(err);
+//     }
+//     }
+// );
+
+//2.3.6 Промис
+// напишем ассинхронную операцию, которая имитирует запрос и ответ сервера
+// const request = new Promise((resolve, reject) => {
+//     console.log("request");
+
+//     setTimeout(() => {
+//     console.log("response");
+//     resolve();
+//     }, 2000);
+// });
+
+// request.than (()) => {
+//     console.log("resolved");
+// },
+// () => {
+//     console.log("rejected")
+// };
+
+//2.3.7 Контекст вызова функции
+// создать объект со свойствами a break. Добавить в объект методы sun and Mul, которые выводят в консоль сумму и произведение полей а и б 
+// . добавить метод Write  который принмает два числа и запиcывает из в a и b
+// const calc = {
+//     a: 5,
+//     b: 6,
+//     sum() {
+//         console.log(this.a + this.b);
+//     },
+//     mul() {
+//         console.log(this.a * this.b);
+//     },
+//     write(a, b) {
+//         this.a = a;
+//         this.b = b;
+//     }
+// };
+// calc.write(10, 23);
+// console.log(calc);
+//2.3.8 Изенение контекста функции
