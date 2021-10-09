@@ -457,3 +457,82 @@
 // calc.write(10, 23);
 // console.log(calc);
 //2.3.8 Изенение контекста функции
+
+//Dom
+//3.1.2 
+// const el = document.querySelector(".last");
+// console.log(el);
+// el.style.color = "green"
+
+//3.1.3 Изменение элементов
+// const input = prompt("Ввдите текст:");
+// const el = document.querySelector(".el");
+// запросить у пользователя ввод сообщения. показать это сообщение  на странице,
+// а через 2 секунды скрыть его.
+// const input = prompt("Введите сообщение:");
+// const messageEL = document.createElement("p");
+// messageEL.innerText = input;
+
+// const messageBox = document.querySelector(".messages");
+// messageBox.append(messageEL);
+
+// //теперь нужно сделать, чтобы сообщение скрывало через 2 сек
+// setTimeout(hideMessage, 2000);
+
+// function hideMessage() {
+//     messageEL.hidden = true;
+
+// }
+
+//3.2.1 что такое событие
+//сверстать страницу с полем ввода, кнопкой и пустым маркированным списком.
+// написать программу, будет обрабатывать нажатие на кнопку, считывать занчение из поля 
+// ввода и добавлять пунск с этим текстом в маркированный список.
+
+// function buttonClick() {
+//     const text = getInputText();
+//     addElementToList(text);
+//     clearInput();
+// }
+// function getInputText() {
+//     const input = document.querySelector(".text-field");
+//     return input.value;
+// }
+// function addElementToList(text) {
+//     const listItem = document.createElement("li");
+//     listItem.innerText = text;
+//     const list = document.querySelector(".list");
+//     list.append(listItem);
+
+// }
+// function clearInput() {
+//     const input = document.querySelector(".text-field");
+//     input.value = "";
+
+// }
+
+// 3.2.2 обработка событий
+
+// Сверстать страницу, содержащую текст и кнопку. Написать программу, кторая при нажатии
+// на кнопку скрывает такст.
+// const button = document.querySelector('.button');
+// button.addEventListener("click", hideText);
+
+// function hideText() {
+//     const text = document.querySelector('.text');
+//     text.hidden = true;
+//     const button = document.querySelector(".button");
+//     button.removeEventListener("click", hideText);
+//     button.addEventListener("click", showText);
+//     }
+//     function showText() {
+//         const text = document.querySelector(".text");
+//         text.hidden = false;
+
+//         const button = document.querySelector(".button");
+//     button.removeEventListener("click", showText);
+//     button.addEventListener("click", hideText);
+
+//     }
+
+//              Встроенные инструменты
