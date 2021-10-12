@@ -234,6 +234,14 @@
 // 1.Вывести в консоль сумму всехцелыхчисел от 50 до 
 // 100.
 
+// let sum = 0;
+// for ( let i = 50; i <= 100; i++) {
+//     sum = sum + i;
+    
+// };
+// console.log(sum);
+
+
 // 2.Вывести в консоль таблицу умножения на 7.
 // 7 x 1 = 7
 // 7 x 2 = 14
@@ -245,6 +253,44 @@
 //     let multiply = number * i;
 //     console.log(`${number}*${i}=${multiply}`)
 // };
+// 3.Запросить у пользователя ввод числа N. Вывести в 
+// консоль среднее арифметическое всехнечётных
+// чисел от 1 до N
+//вариант 1
+let input = +prompt("Введите любое число:");
+let arr = [];
+
+for (let i = 1; i <= input; i++) {
+    if (i % 2 != 0) {
+        arr.push(i);
+    }
+};
+
+let sumArr = 0;
+for (let i = 0; i < arr.length; i++) 
+{sumArr = sumArr + arr[i];
+    
+
+};
+
+let result = sumArr /  arr.length;
+alert(result);
+
+// вариант 2
+// let input = +prompt("Введите любое число:");
+// let sum = 0;
+// let counter = 0
+
+// for (let i = 1; i <= input; i++) {
+//     if (i % 2 != 0) {
+//         sum = sum + i;
+//         counter++
+//     }
+// };
+
+// let result  = sum / counter;
+// alert(result);
+
 
 //2.1.1 Что такое Объекты
 
@@ -536,3 +582,58 @@
 //     }
 
 //              Встроенные инструменты
+// 4.1.1 встроенный объект date
+//программа, которая считает сколько секунд осталось до завтра
+// const now = new Date();
+// const secInDay = 24 * 60 * 60;
+// const hrs = now.getHours();
+// const mins = now.getMinutes();
+// const sec = now.getSeconds();
+// const secPass = (hrs * 3600)+(mins * 60) + sec;
+// alert(secInDay - secPass);
+
+// напишем программу , вычисляющую сумму  квадратов всех чисел от 1 до 100 000. измерить
+// время работы этой прграммы.
+
+// const start = Date.now();
+// let sum = 0;
+// for (let i = 1; i <= 10000000; i++)
+// {sum = sum + i * i;}
+
+// const end = Date.now();
+
+// alert(end - start);
+
+//4.1.2 запросить у пользователя дату в формате день месяц год. вывести в консоль кол
+// часов, которые прошли с этой даты.
+
+// const input = prompt("DD MM YYYY");
+// const  [day, month, year] = input.split(" ");
+
+// const inputDate = new Date(`${year}-${month}-${day}`);
+// let diff = Date.now() - inputDate;
+// diff = diff / 1000 / 60 /60;
+// alert(diff);
+
+//4.2.1 Обработка ошибок
+//написать программу, которая запрашивает у пользователя данные в формате "Имя Фамилия"
+// в два слова. Проверить введенные данные, и если формат неправильный - выбро
+// сить ошибку
+// const input = prompt("Введите свое имя");
+// const inputArr = input.split(" ");
+// if (input.length != 2) {
+//     throw new Error("Неправильный формат")
+// };
+
+// try {
+// const input = prompt("Введите свое имя");
+// const inputArr = input.split(" ");
+
+
+// if (input.length != 2) {
+//     throw new Error("Неправильный формат");
+// }
+// } catch (err) {
+// alert(err.message) //здесь выводим текст ошибки
+// }
+// console.log("+");
