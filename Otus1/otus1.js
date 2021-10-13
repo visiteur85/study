@@ -237,7 +237,7 @@
 // let sum = 0;
 // for ( let i = 50; i <= 100; i++) {
 //     sum = sum + i;
-    
+
 // };
 // console.log(sum);
 
@@ -257,24 +257,24 @@
 // консоль среднее арифметическое всехнечётных
 // чисел от 1 до N
 //вариант 1
-let input = +prompt("Введите любое число:");
-let arr = [];
+// let input = +prompt("Введите любое число:");
+// let arr = [];
 
-for (let i = 1; i <= input; i++) {
-    if (i % 2 != 0) {
-        arr.push(i);
-    }
-};
+// for (let i = 1; i <= input; i++) {
+//     if (i % 2 != 0) {
+//         arr.push(i);
+//     }
+// };
 
-let sumArr = 0;
-for (let i = 0; i < arr.length; i++) 
-{sumArr = sumArr + arr[i];
-    
+// let sumArr = 0;
+// for (let i = 0; i < arr.length; i++) 
+// {sumArr = sumArr + arr[i];
 
-};
 
-let result = sumArr /  arr.length;
-alert(result);
+// };
+
+// let result = sumArr /  arr.length;
+// alert(result);
 
 // вариант 2
 // let input = +prompt("Введите любое число:");
@@ -344,6 +344,37 @@ alert(result);
 // alert(names);
 // alert(age);
 // alert(height);
+
+//Создайте объект user, содержащийполе name со 
+// значением ‘John’.
+// 1.Запросить у пользователя ввод числа. Записать 
+// введенное значение в поле age объекта user.
+
+// let user = {name: "John"};
+// let input = prompt("Введите число:");
+// user.age = input;
+// console.log(user);
+
+
+//2.Создать копиюобъекта user с именем admin. 
+// Добавить новому объекту поле role со значением 
+// ‘admin’.
+// let user = {name: "John"};
+// let input = prompt("Введите число:");
+// user.age = input;
+// let admin  = Object.assign({}, user);
+// admin.role = "admin";
+
+
+//3. Записать все значения полейобъекта admin в 
+// отдельные переменные. Имена переменных
+// должны совпадать с названиями полей.
+// let user = {name: "John"};
+// let input = prompt("Введите число:");
+// user.age = input;
+// let admin  = Object.assign({}, user);
+// admin.role = "admin";
+// let {name, age, role} = admin;
 
 //2.2.1 Что такое Массив
 
