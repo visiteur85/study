@@ -43,3 +43,48 @@ function squareArea(A) {
     var area = Math.pow(radius, 2);
     return Math.round(area * 100) / 100
 }
+
+//  5. 
+function greet(language) {
+    const countries = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso',
+        IP_ADDRESS_INVALID: 'Welcome',
+        IP_ADDRESS_NOT_FOUND: 'Welcome',
+        IP_ADDRESS_REQUIRED: 'Welcome'
+    };
+    return countries[language]
+};
+//6Sum of positive
+function positiveSum(arr) {
+    var sum = 0;
+    for(var i = 0; i < arr.length; i++) {
+      if(arr[i] > 0) {
+       sum += arr[i];
+     }
+    }
+   return sum;
+   }
+   //7 Removing Elements
+   function removeEveryOther(arr){
+    let newArr=[];
+  for (let i = 0; i < arr.length; i+=2){
+    newArr.push(arr[i]);
+    }
+  return newArr;
+  }
