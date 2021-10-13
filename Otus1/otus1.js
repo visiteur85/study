@@ -433,6 +433,42 @@
 // let olimpisc = [12, 23, 45];
 // let [gold = 0, , bronze = 0] = olimpisc;
 
+//1.Выведите в консоль сумму всехэлементов массива.
+// const arr = [1,10,8, 107];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// };
+// console.log(sum);
+
+//2.Создайте новыймассив на основе исходного, в 
+// котором каждыйэлемент будет вдвое больше 
+// элемента исходного массива с таким же индексом. 
+// (a[1] = 3, b[1] = 6, где a —исходныймассив, b —новый
+// массив).
+// const arr = [1,10,8, 107];
+// let newArr = []
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     newArr.push(arr[i] * 2);
+// };
+// console.log(newArr);
+
+// 3. *Найдите и выведите в консоль наибольшийи 
+// наименьшийэлементы исходного массива.
+//вариант 1
+// const arr = [1, 10, 8, 107];
+// let maxElement = arr.filter(function(el){
+//     return el === Math.max(...arr)})
+//     console.log(maxElement);
+// let minElement = arr.filter(function(el){
+//         return el === Math.min(...arr)})
+//         console.log(minElement);
+
+//вариант 2
+// const arr = [1, 10, 8, 107];
+// console.log(Math.max(...arr), Math.min(...arr));
+
 //2.3.1 Что такое функция
 
 //написать функцию calc , которая принимает на вход число и степень, в которую нужно возвести это число.
