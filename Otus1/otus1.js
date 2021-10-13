@@ -704,3 +704,24 @@
 // alert(err.message) //здесь выводим текст ошибки
 // }
 // console.log("+");
+
+//4.3.1. втроенный объект Math
+//написать программу, которая генерирует уравнение вида ах=б со случайным коэффициентом.
+// Запросить у пользователя ввод решения уравнения, округленного в менбщую стороную. Проверит правильность ответа
+// function generateCoef(min, max) {
+//     const coef = Math.random() * (max - min) + min;
+//     return Math.floor(coef);
+// }
+// const a  = generateCoef(2, 20);
+// const b  = generateCoef(2, 20);
+// const input = prompt(`${a}x = ${b}. x = ?`);
+
+// const res = Math.floor(b/a);
+
+// if (input == res) {
+//     alert("Right");
+// } else {
+//         alert("not right");
+//     }
+
+
