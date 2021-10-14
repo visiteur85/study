@@ -32,8 +32,8 @@ function even_or_odd(number) {
     if (number % 2 === 0) {
         return "Even";
     } else {
-        return "Odd"
-    }
+        return "Odd";
+    };
 }
 
 //4 
@@ -92,4 +92,13 @@ function positiveSum(arr) {
   //Palindrome Strings
   function isPalindrome(line) {
     return (''+line) === (''+line).split('').reverse().join('');
+  }
+  //Century From Year
+  function century(year) {
+    let result = 0;  for (let i = 0; i < year; i++) {
+      if (i % 100 === 0) {
+        result++;
+      }
+    }
+    return result;
   }
