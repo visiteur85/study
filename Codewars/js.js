@@ -112,3 +112,8 @@ return arr.reverse();
 function greet() {
     return "hello world!"
   }
+
+  //Convert a Boolean to a String
+  function booleanToString(b){
+    return b.toString();
+   }
