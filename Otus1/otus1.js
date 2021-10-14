@@ -725,11 +725,22 @@
 //     }
 
 
-function positiveSum(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > 0) {
-    sum += arr[i]};
-    return sum
-  };
-}
+// function positiveSum(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 0) {
+//     sum += arr[i]};
+//     return sum
+//   };
+// }
+
+//4.4.2 поиск совпадение и замена строк
+//запросить у паользователя ввод емэйл. Проверить , является ли введённое значение email
+const email = prompt("Enter email");
+const regexp = /[a-zA-Z_\.0-9]+@[a-z0-9]+\.[a-z]{2,5}/;
+
+if (regexp.test(email)) {
+  alert("its ok")
+} else {
+  alert(no)
+};
