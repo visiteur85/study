@@ -146,5 +146,7 @@ function greet() {
             return 'You were born this very year!'
           }
 
-
-          
+//Function 2 - squaring an argument
+function square(num) {
+  return num * num;
+}
