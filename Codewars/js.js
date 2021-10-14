@@ -88,3 +88,8 @@ function positiveSum(arr) {
     }
   return newArr;
   }
+
+  //Palindrome Strings
+  function isPalindrome(line) {
+    return (''+line) === (''+line).split('').reverse().join('');
+  }
