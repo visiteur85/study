@@ -124,3 +124,12 @@ function greet() {
         if (l===w) {return l*w}
         {return 2 * (l+w)}
       };
+
+      //Is it a palindrome?
+
+      function isPalindrome(x) {
+ 
+        if (x.toLowerCase() === x.toLowerCase().split("").reverse().join(""))
+        { return true}
+        else {return false};}
+      
