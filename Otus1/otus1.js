@@ -736,11 +736,17 @@
 
 //4.4.2 поиск совпадение и замена строк
 //запросить у паользователя ввод емэйл. Проверить , является ли введённое значение email
-const email = prompt("Enter email");
-const regexp = /[a-zA-Z_\.0-9]+@[a-z0-9]+\.[a-z]{2,5}/;
+// const email = prompt("Enter email");
+// const regexp = /[a-zA-Z_\.0-9]+@[a-z0-9]+\.[a-z]{2,5}/;
 
-if (regexp.test(email)) {
-  alert("its ok")
-} else {
-  alert(no)
-};
+// if (regexp.test(email)) {
+//   alert("its ok")
+// } else {
+//   alert(no)
+// };
+
+//4.5.1 cookie
+
+// //  document.cookie = "user=John";
+// // document.cookie = "token=123; max-age=10";
+//  console.log(document.cookie);
