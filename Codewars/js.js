@@ -117,3 +117,10 @@ function greet() {
   function booleanToString(b){
     return b.toString();
    }
+
+    //Area or Perimeter
+
+    const areaOrPerimeter = function(l , w) {
+        if (l===w) {return l*w}
+        {return 2 * (l+w)}
+      };
