@@ -151,9 +151,15 @@ function square(num) {
   return num * num;
 }
 
-//Watermelon function divide(weight){
+//fr(weight){
  let a=weight-2
  let b=weight%2
  if (a>1&&b==0)return true
  return false
+}
+
+//Enumerable Magic #25 - Take the First N Elements
+
+function take(arr, n) {
+  return arr.slice(0, n);
 }
