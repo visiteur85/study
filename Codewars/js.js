@@ -181,3 +181,11 @@ function defineSuit(card) {
 function hexToDec(hexString){
   return  parseInt(hexString, 16);
  }
+
+ //Did she say hallo?
+
+ function validateHello(greetings) {
+  
+  let res =/(hello|ciao|salut|hallo|hola|ahoj|czesc)/i.test(greetings) 
+   return res
+ }
