@@ -197,3 +197,8 @@ function hexToDec(hexString){
   }
   else {return false}
 }
+
+//Return Negative
+function makeNegative(num) {
+  return -num
+}
