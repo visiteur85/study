@@ -219,3 +219,9 @@ function basicOp(operation, value1, value2)
   else if (operation == "*") {return value1 * value2 }
   else { return value1 / value2}
 }
+
+//Parse nice int from char problem
+function getAge(inputString){
+  // return correct age (int). Happy coding :) 
+    return +inputString[0]
+  }
