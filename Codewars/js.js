@@ -236,3 +236,7 @@ function getAge(inputString){
   function repeatStr (n, s) {
     return s.repeat(n);
   }
+  //Reversed Strings
+  function solution(str){
+    return str.split("").reverse().join("")
+  }
