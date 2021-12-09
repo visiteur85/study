@@ -232,3 +232,7 @@ function getAge(inputString){
       {return 0}
     else {return n * m}
   }
+  //String repeat
+  function repeatStr (n, s) {
+    return s.repeat(n);
+  }
