@@ -240,3 +240,7 @@ function getAge(inputString){
   function solution(str){
     return str.split("").reverse().join("")
   }
+  //Third Angle of a Triangle
+  function otherAngle(a, b) {
+    return 180 - (a+b);
+  }
