@@ -244,3 +244,11 @@ function getAge(inputString){
   function otherAngle(a, b) {
     return 180 - (a+b);
   }
+  //Remove exclamation marks
+  function removeExclamationMarks(s) {
+    let str = s
+    let arr = str.split("")
+    let newArr = arr.filter(f=>f!=="!")
+    let newstr = newArr.join("")
+    return newstr;
+  }git
