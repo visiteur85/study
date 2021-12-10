@@ -252,3 +252,8 @@ function getAge(inputString){
     let newstr = newArr.join("")
     return newstr;
   }git
+
+  //Beginner - Lost Without a Ma
+  function maps(x){
+    return x.map(m=>m*2)
+    }
