@@ -257,3 +257,11 @@ function getAge(inputString){
   function maps(x){
     return x.map(m=>m*2)
     }
+
+    //Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+    if (bool === true) {
+        return "Yes"
+    }
+    else {return "No"}
+}
