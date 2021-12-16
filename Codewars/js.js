@@ -284,3 +284,10 @@ function rentalCarCost(d) {
 
     return (d * 40) - day - week;
 }
+//Student's Final Grade
+function finalGrade (exam, projects) {
+    if (exam > 90 | projects > 10)
+    {return 100};
+    if (exam > 75 && projects <= 5.75)
+    {return 90};
+}
