@@ -313,3 +313,8 @@ function removeChar(str){
 function perimeterSequence(a,n) {
     return a*n*4
 }
+//Opposite number
+//Number of Decimal Digits
+function digits(n) {
+    return n.toString().length
+}
