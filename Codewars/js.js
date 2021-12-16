@@ -300,3 +300,7 @@ function simpleMultiplication(number) {
 function solution(str, ending){
     return str.endsWith(ending);
 }
+//Remove String Spaces
+function noSpace(x){
+    return x.split(' ').join('');
+}
