@@ -309,3 +309,7 @@ function removeChar(str){
     return str.slice(1, -1)
 
 };
+//Perimeter sequence
+function perimeterSequence(a,n) {
+    return a*n*4
+}
