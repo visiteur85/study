@@ -270,3 +270,8 @@ function boolToWord( bool ){
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
+//Type of sum
+function typeOfSum(a, b) {
+    return typeof(a + b);
+
+}
