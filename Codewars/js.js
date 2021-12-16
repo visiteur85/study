@@ -287,7 +287,7 @@ function rentalCarCost(d) {
 //Student's Final Grade
 function finalGrade (exam, projects) {
     if (exam > 90 | projects > 10)
-    {return 100};
+    {return 100};K
     if (exam > 75 && projects <= 5.75)
     {return 90};
 }
@@ -304,3 +304,8 @@ function solution(str, ending){
 function noSpace(x){
     return x.split(' ').join('');
 }
+//Remove First and Last Character
+function removeChar(str){
+    return str.slice(1, -1)
+
+};
