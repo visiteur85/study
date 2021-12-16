@@ -322,3 +322,7 @@ function digits(n) {
 function areaLargestSquare(r) {
     return 2*r*r; //code here
 }
+//Fake Binary
+function fakeBin(x){
+    return x.replace(/[1234]/g, '0').replace(/[56789]/g, '1')
+}
