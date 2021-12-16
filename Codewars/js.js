@@ -291,3 +291,12 @@ function finalGrade (exam, projects) {
     if (exam > 75 && projects <= 5.75)
     {return 90};
 }
+
+//Simple multiplication
+function simpleMultiplication(number) {
+    return number % 2 === 0 ? number * 8 : number * 9
+}
+//String ends with?
+function solution(str, ending){
+    return str.endsWith(ending);
+}
