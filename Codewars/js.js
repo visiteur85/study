@@ -318,3 +318,7 @@ function perimeterSequence(a,n) {
 function digits(n) {
     return n.toString().length
 }
+//Largest Square Inside A Circle
+function areaLargestSquare(r) {
+    return 2*r*r; //code here
+}
