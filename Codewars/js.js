@@ -356,3 +356,11 @@ function capitalizeWord(word) {
     return `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`;
 
 }
+//Can we divide it?
+function isDivideBy(number, a, b) {
+    if (number % a === 0 && number % b === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
