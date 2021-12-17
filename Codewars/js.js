@@ -372,3 +372,13 @@ function litres(time) {
 function move (position, roll) {
     return roll * 2 + position ;
 }
+//Calculate average
+function find_average(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++)
+    {count += array[i]};
+
+
+
+    return count / array.length;
+}
