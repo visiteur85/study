@@ -335,3 +335,9 @@ function even_or_odd(number) {
 function toBinary(n){
     return Number(n.toString(2));
 }
+
+//Convert a String to a Number!
+var stringToNumber = function(str){
+
+    return +str;
+}
