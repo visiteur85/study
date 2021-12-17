@@ -326,3 +326,12 @@ function areaLargestSquare(r) {
 function fakeBin(x){
     return x.replace(/[1234]/g, '0').replace(/[56789]/g, '1')
 }
+//Even or Odd
+function even_or_odd(number) {
+    return  number % 2 === 0 ? "Even" : "Odd"
+
+}
+//Convert to Binary
+function toBinary(n){
+    return Number(n.toString(2));
+}
