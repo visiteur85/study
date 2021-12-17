@@ -375,10 +375,12 @@ function move (position, roll) {
 //Calculate average
 function find_average(array) {
     let count = 0;
-    for (let i = 0; i < array.length; i++)
+    if (array.length > 0)
+    {for (let i = 0; i < array.length; i++)
     {count += array[i]};
 
+        return count / array.length;}
 
+    else {return 0}
 
-    return count / array.length;
 }
