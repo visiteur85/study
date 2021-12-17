@@ -368,3 +368,7 @@ function isDivideBy(number, a, b) {
 function litres(time) {
     return Math.floor(time * 0.5);
 }
+//Grasshopper - Terminal game move functio
+function move (position, roll) {
+    return roll * 2 + position ;
+}
