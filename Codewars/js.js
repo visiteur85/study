@@ -351,3 +351,8 @@ function century(year) {
     return result.length === 2 ? Number(result[0]) + 1 : Number(result[0])
         ;
 }
+//Capitalization and Mutability
+function capitalizeWord(word) {
+    return `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`;
+
+}
