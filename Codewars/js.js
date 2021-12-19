@@ -419,3 +419,7 @@ let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
 function invert(array) {
     return array.map(m=>-m);
 }
+//Kata Example Twist
+var websites = []
+for (let i = 0; i < 1000; i++ )
+{ websites.push("codewars")}
