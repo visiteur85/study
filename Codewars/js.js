@@ -389,3 +389,11 @@ function find_average(array) {
 function usdcny(usd) {
     return (usd * 6.75).toFixed(2).toString() + " Chinese Yuan"
 }
+//Reversed sequence
+const reverseSeq = n => {
+    let arr = []
+    for (let i = n; i >= 1; i-- )
+        arr.push(i)
+
+    return arr;
+};
