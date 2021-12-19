@@ -414,3 +414,8 @@ let championsLeagueGoals = 10;
 let copaDelReyGoals = 5;
 
 let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+
+//Invert values
+function invert(array) {
+    return array.map(m=>-m);
+}
