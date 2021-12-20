@@ -423,3 +423,11 @@ function invert(array) {
 var websites = []
 for (let i = 0; i < 1000; i++ )
 { websites.push("codewars")}
+
+//Pre-FizzBuzz Workout #1
+function preFizz(n) {
+    let arr = []
+    for (let i = n; i > 0; i-- )
+    {arr.unshift(i);}
+    return arr
+}
