@@ -445,3 +445,8 @@ function odds(values){
     // arrow it
     return values.filter( f=>f % 2 !==0 );
 }
+
+//JavaScript Array Filter
+function getEvenNumbers(numbersArray){
+    return numbersArray.filter(f=>f % 2 === 0)
+}
