@@ -440,3 +440,8 @@ function checkAlive (health) {
         return true
     }
 }
+//Are arrow functions odd?
+function odds(values){
+    // arrow it
+    return values.filter( f=>f % 2 !==0 );
+}
