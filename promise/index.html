@@ -4,19 +4,36 @@
 
 <script>
     // внутрь Promise передаем колбэк-функцию, которая собственно и есть та логика, которую промис обещает выполнить.
+    // let myPromise = new Promise((resolve, reject) => {
+    //     setTimeout(()=>{
+    //         resolve(Math.random())
+    //     }, 2000)
+    //
+    // });
+    // // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
+    // // myPromise.then((date ) => {
+    // //     console.log(date);
+    // // })
+    // //
+    // // myPromise.then((date ) => {
+    // //     console.log(`hi ${date}`);
+    // // })
+const doAfter = (seconds) => {
+    let time = seconds * 1000;
     let myPromise = new Promise((resolve, reject) => {
         setTimeout(()=>{
-            resolve(Math.random())
-        }, 2000)
-
+            reject()
+        }, time)
     });
-    // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
-    myPromise.then((date ) => {
-        console.log(date);
-    })
+    return myPromise;
+    };
+    // doAfter(5).then( () => console.log('я сработал через 5 секунд') );
+    // doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
+    // doAfter(10).then( () => console.log('я сработал через 10 секунд') );
 
-    myPromise.then((date ) => {
-        console.log(`hi ${date}`);
-    })
+    let promise3 = doAfter(3);
+    promise3.catch( () => console.error('я сработал через 3 секунд') );
+    promise3.then( () => console.log('и я тоже следом сработал через 3 секунд') );
+    promise3.then( () => console.log('и я') );
 
 </script>
