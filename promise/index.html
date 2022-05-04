@@ -1,0 +1,22 @@
+
+    <meta charset="UTF-8">
+
+
+<script>
+    // внутрь Promise передаем колбэк-функцию, которая собственно и есть та логика, которую промис обещает выполнить.
+    let myPromise = new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve(Math.random())
+        }, 2000)
+
+    });
+    // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
+    myPromise.then((date ) => {
+        console.log(date);
+    })
+
+    myPromise.then((date ) => {
+        console.log(`hi ${date}`);
+    })
+
+</script>
